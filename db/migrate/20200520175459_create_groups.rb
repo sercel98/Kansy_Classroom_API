@@ -5,7 +5,6 @@ class CreateGroups < ActiveRecord::Migration[6.0]
       t.string :description
       t.string :ownerId, null: false
       t.string :courseState, null: false
-      t.belongs_to :teacher, null: false, foreign_key: true
 
       t.timestamps
     end
