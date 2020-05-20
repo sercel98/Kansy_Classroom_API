@@ -1,9 +1,9 @@
 class CreateTeachers < ActiveRecord::Migration[6.0]
   def change
     create_table :teachers do |t|
+      t.string :userId,  primary_key: true
       t.string :name
       t.string :email
-      t.string :profile_id
       t.course :belongs_to
 
       t.timestamps
